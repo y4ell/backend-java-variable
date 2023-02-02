@@ -1,78 +1,68 @@
-# Template - Opdrachtbeschrijving ???
+# Backend Java: Variables
 
 ## Inleiding
 
-Dit project is gemaakt om als basis te dienen voor opdracht-projecten in GitHub, die uitgecheckt kunnen worden door studenten.
+Deze repository bevat oefeningen voor het declareren en assignen van variabelen in Java.
+Neem eerst het hoofdstuk over variabelen door.
+
+Je gaat oefenen met het declareren van variabelen. In tegenstelling tot eerdere oefeningen compiled de code bij deze opdracht niet.
+Je ziet src/main/java een class `Main`.
+
+In deze class staan een hoop `System.out.println` statements, maar de `variabele` zijn rood gekleurd.
+
+Dit komt omdat de variabele nog niet gedeclareerd en geassigned zijn.
+
+Als je deze code probeert uit te voeren krijg je foutmeldingen van de compiler.
 
 ## Voor je begint
 
-### Java installeren
-
-Intellij kan Java voor je installeren:
-1. Om dit te doen kan je het volgende scherm openen: `File -> Project Structure -> Project Settings -> Project`.
-2. Bij SDK kan je in de dropdown `download JDK` selecteren.
-3. Kies hier voor versie 17 en laat deze downloaden en installeren.
+Voorwaarden voor deze opdracht:
+1. Java Development Kit, versie 17
+2. IntelliJ IDEA
 
 ### Uitvoeren met Maven
 
-We maken hier ook gebruik maken van de build tool maven.
-Dit kunnen we zien aan het bestand `pom.xml`.
-Deze file bevat de configuratie voor ons project.
-Voor een klein project als dit is deze configuratie nog erg klein.
-We zien hier dat we voor nu even Java versie 8 gebruiken, dit doen we nog even om te voorkomen dat Intellij je teveel gaat helpen terwijl je nog concepten aan het leren bent.
-Later in deze cursus gaan we java 17 gebruiken.
-We kunnen ook kijken of het programma via Maven te draaien is.
-Hiervoor kun je helemaal onderin het scherm op het tabblad `terminal` klikken.
-Hier kun je het volgende commando uitvoeren:
+Voer de opdracht code uit met:
 
 ```shell
 ./mvnw clean compile exec:java
 ```
 
-of 
+of
 
 ```shell
 mvnw.cmd clean compile exec:java
 ```
 
-Als het goed is komt er nu een boel tekst hier te staan waaronder de tekst "BUILD SUCCESS" en hierboven de tekst "Hello world".
-Als dit werkt weet je dat maven correct werkt.
-
 ### Uitvoeren vanuit Intellij
 
-Dit is een project dat gebruik maakt van Maven en Intellij kan hier mee omgaan.
-Er is een kans dat Intellij dit al voor je gedaan heeft, maar dit kunnen we controleren door helemaal aan de rechterkant het tabblad `Maven` te openen.
-Als dit tabblad leeg is moet er op het `+` icoon gedrukt worden en de `pom.xml` van dit project geselecteerd worden.
-Nu zie je als het goed is het project `Helloworld` in dit tabblad staan. 
+Groene play-knop voor de `main` method klikken en 'Run...' kiezen.
 
-Als alles goed is gegaan zie je nu in de map `src/main/java` de classe `Main` staan.
-Hier zie je een groen play knopje voor de methode `main` staan.
-Als je hier op klikt krijg je de mogelijkheid om `run Main.main()` te doen.
-Als je hiervoor kiest gaat het programma draaien en zal je onderin in het `run` scherm de tekst:
-"Hello world" te zien moeten krijgen (met daaronder de tekst "Process finished with exit code 0").
-Als je dit ziet betekend dat Java goed is geinstalleerd.
+### Testen uitvoeren vanuit Intellij
 
+Groene play-knop voor de `MainTest` class in src/test/java klikken en 'Run 'MainTest'' kiezen.
 
 ## Opdracht
 
-Beschrijving van de opdracht: je gaat dit en dat maken en dit moet het doen.
+Zorg dat de code compiled en de testen slagen. Je mag de regels die starten met System.out.println niet aanpassen.
+Achter de regels die beginnen met System.out.println staat in commentaar welk type de variable heeft, en welke waarde.
 
-### Randvoorwaarden
-
-De opdrach moet voldoen aan de volgende voorwaarden:
-
-* Voorwaarde
-* Nog een voorwaarde
-* etc...
+Om te valideren of je klaar bent kun je de testen draaien. In `src/test/java` vind je een class MainTest. Links naast `public class MainTest {` staat een groen pijltje dat je kunt gebruiken om te compilen en te testen. Onder in het scherm komt het resultaat te staan.
 
 ### Stappenplan
 
 _Let op_ het is uitdagender om jouw eigen stappenplan te maken. Als je niet zo goed weet waar je moet beginnen, kun je onderstaand stappenplan gebruiken
 
-* Doe eerst dit
-* Doe dan dat
-* etc...
+* Kijk goed naar het voorbeeld, hier zie je dat er een variabele wordt gedeclareerd van type `String` met naam `string_voorbeeld`. Daarna volgt een `=` waardoor we direct een waarde toewijzen, namelijk de string `"Dit is een voorbeeld"`. Je sluit het statement af met `;`
+* Declareer onder het voorbeeld een nieuwe variabele van type  `String` met de naam `string_hello_world`
+* Zet na de declaratie een `=` om direct een waarde toe te wijzen.
+* Wijs de String `"hello world"` toe, en sluit af met een `;`
+* De regel `System.out.println(string_hello_world);` bevat nu geen foutmelding meer,
+* Declareer op een nieuwe regel een nieuwe variabele van type  `boolean` met de naam `boolean_true`
+* Zet na de declaratie een `=` om direct een waarde toe te wijzen.
+* Wijs de boolean `true` toe, en sluit af met een `;`
 
 ## Bonusopdracht
 
-Optioneel.
+Het onderste `System.out.println` statement vraagt je om een variable opnieuw toe te wijzen. Op welke plek in de code doe je dit?
+Hoe ziet alleen toewijzen er uit? (Hint: de variabele bestaat al, dus we hoeven hem niet te declareren.)
