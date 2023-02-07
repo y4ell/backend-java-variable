@@ -6,10 +6,10 @@ De ontwikkelaar van dit Java-programma is halverwege het programmeren een broodj
 
 In de `Main`-class staan een hoop `System.out.println`-statements, maar alle variabelen die geprint moeten worden zijn rood gekleurd. Dat komt omdat deze variabelen nog niet zijn gedeclareerd. Gelukkig heeft de ontwikkelaar wat hints achtergelaten en een aantal testen geschreven voor dit programma die je helpen de verloren variabelen te declareren. 
 
+Je kunt deze opdracht maken door het project te clonen of te downloaden naar jouw eigen computer via deze GitHub repository. De uitwerkingen staan op de branch _uitwerkingen_.
+
 ## Voor je begint
 Je hebt IntelliJ IDEA en de JDK (Java Development Kit) versie 17 of hoger nodig - deze heb je beiden via de instructies op EdHub geïnstalleerd.
-
-Je kunt deze opdracht maken door het project te clonen of te downloaden naar jouw eigen computer via deze GitHub repository. De uitwerkingen staan op de branch _uitwerkingen_.
 
 ### Code runnen (vanuit IntelliJ)
 
