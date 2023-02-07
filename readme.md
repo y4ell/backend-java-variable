@@ -11,23 +11,20 @@ Je kunt deze opdracht maken door het project te clonen of te downloaden naar jou
 ## Voor je begint
 Je hebt IntelliJ IDEA en de JDK (Java Development Kit) versie 17 of hoger nodig - deze heb je beiden via de instructies op EdHub geïnstalleerd.
 
-### Code runnen (vanuit IntelliJ)
+### 🟩 Code runnen (vanuit IntelliJ)
+Klik op de groene play-knop voor de main-methode en kies 'Run...'.
 
-Klik op de groene play-knop voor de `main`-methode en kies _'Run...'_.
+### 🟨 Testen uitvoeren (vanuit IntelliJ)
+Klik op de groene play-knop voor de MainTest-class in src/test/java en kies 'Run 'MainTest''.
 
-### Testen uitvoeren (vanuit IntelliJ)
-
-Klik op de groene play-knop voor de `MainTest`-class in `src/test/java` en kies _'Run 'MainTest''_.
-
-### Uitvoeren met Maven (nog niet van toepassing)
-
-Voer de opdracht code uit met:
+### ⬛ Code runnen (met Maven)
+Of, als je bekend bent met de terminal, kun je de applicatie runnen met:
 
 ```shell
 ./mvnw clean compile exec:java
 ```
 
-of
+of 
 
 ```shell
 mvnw.cmd clean compile exec:java
